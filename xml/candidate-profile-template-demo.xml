@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<candidate-profile-data-model>
+  <!--Portfolio demo. Uses synthetic identifiers and neutral business rules.-->
+  <template-name><![CDATA[Candidate Profile Demo]]></template-name>
+  <template-desc><![CDATA[Neutral portfolio example for SAP SuccessFactors Recruiting Management.]]></template-desc>
+  <instruction-header>
+    <label mime-type="text-html"><![CDATA[<b>Profile guidance</b><p>Complete the required fields and provide current information.</p>]]></label>
+    <label mime-type="text-html" lang="ru_RU"><![CDATA[<b>Правила заполнения</b><p>Заполните обязательные поля и укажите актуальные данные.</p>]]></label>
+  </instruction-header>
+  <field-definition id="firstName" type="text" required="true" custom="false" anonymize="true" sensitive="true">
+    <field-label mime-type="text-plain"><![CDATA[First name]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Имя]]></field-label>
+    <field-description><![CDATA[Candidate first name]]></field-description>
+  </field-definition>
+  <field-definition id="middleName" type="text" required="false" custom="false" anonymize="true" sensitive="true">
+    <field-label mime-type="text-plain"><![CDATA[Middle name]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Отчество]]></field-label>
+    <field-description><![CDATA[Candidate middle name]]></field-description>
+  </field-definition>
+  <field-definition id="lastName" type="text" required="true" custom="false" anonymize="true" sensitive="true">
+    <field-label mime-type="text-plain"><![CDATA[Last name]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Фамилия]]></field-label>
+    <field-description><![CDATA[Candidate last name]]></field-description>
+  </field-definition>
+  <field-definition id="contactEmail" type="text" required="true" custom="false" anonymize="true" sensitive="true">
+    <field-label mime-type="text-plain"><![CDATA[Email]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Электронная почта]]></field-label>
+    <field-description><![CDATA[Primary contact email]]></field-description>
+  </field-definition>
+  <field-definition id="cellPhone" type="text" required="false" custom="false" anonymize="true" sensitive="true">
+    <field-label mime-type="text-plain"><![CDATA[Mobile phone]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Мобильный телефон]]></field-label>
+    <field-description><![CDATA[Primary contact phone]]></field-description>
+  </field-definition>
+  <field-definition id="country" type="picklist" required="true" custom="false" anonymize="false" sensitive="false">
+    <field-label mime-type="text-plain"><![CDATA[Country]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Страна]]></field-label>
+    <field-description><![CDATA[Country of residence]]></field-description>
+    <picklist-id>country</picklist-id>
+  </field-definition>
+  <field-definition id="city" type="text" required="false" custom="false" anonymize="true" sensitive="true">
+    <field-label mime-type="text-plain"><![CDATA[City]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Город]]></field-label>
+    <field-description><![CDATA[City of residence]]></field-description>
+  </field-definition>
+  <field-definition id="currentCompany" type="text" required="false" custom="false" anonymize="true" sensitive="true">
+    <field-label mime-type="text-plain"><![CDATA[Current employer]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Текущий работодатель]]></field-label>
+    <field-description><![CDATA[Current employer name]]></field-description>
+  </field-definition>
+  <field-definition id="currentTitle" type="text" required="false" custom="false" anonymize="true" sensitive="true">
+    <field-label mime-type="text-plain"><![CDATA[Current position]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Текущая должность]]></field-label>
+    <field-description><![CDATA[Current job title]]></field-description>
+  </field-definition>
+  <field-definition id="desiredLocation" type="text" required="false" custom="true" anonymize="false" sensitive="false">
+    <field-label mime-type="text-plain"><![CDATA[Preferred work location]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Желаемое место работы]]></field-label>
+    <field-description><![CDATA[Preferred work location]]></field-description>
+  </field-definition>
+  <field-definition id="workSchedule" type="picklist" required="false" custom="true" anonymize="false" sensitive="false">
+    <field-label mime-type="text-plain"><![CDATA[Preferred schedule]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Желаемый график]]></field-label>
+    <field-description><![CDATA[Preferred work schedule]]></field-description>
+    <picklist-id>workScheduleDemo</picklist-id>
+  </field-definition>
+  <field-definition id="employmentType" type="picklist" required="false" custom="true" anonymize="false" sensitive="false">
+    <field-label mime-type="text-plain"><![CDATA[Employment type]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Тип занятости]]></field-label>
+    <field-description><![CDATA[Preferred employment type]]></field-description>
+    <picklist-id>employmentTypeDemo</picklist-id>
+  </field-definition>
+  <field-definition id="salaryExpectation" type="text" required="false" custom="true" anonymize="true" sensitive="true">
+    <field-label mime-type="text-plain"><![CDATA[Salary expectation]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Ожидаемый доход]]></field-label>
+    <field-description><![CDATA[Optional salary expectation]]></field-description>
+  </field-definition>
+  <field-definition id="candidateSource" type="picklist" required="false" custom="true" anonymize="false" sensitive="false">
+    <field-label mime-type="text-plain"><![CDATA[Candidate source]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Источник кандидата]]></field-label>
+    <field-description><![CDATA[How the candidate entered the process]]></field-description>
+    <picklist-id>candidateSourceDemo</picklist-id>
+  </field-definition>
+  <field-definition id="talentPool" type="picklist" required="false" custom="true" anonymize="false" sensitive="false">
+    <field-label mime-type="text-plain"><![CDATA[Talent pool]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Пул талантов]]></field-label>
+    <field-description><![CDATA[Optional talent pool classification]]></field-description>
+    <picklist-id>talentPoolDemo</picklist-id>
+  </field-definition>
+  <field-definition id="privacyConsent" type="bool" required="true" custom="true" anonymize="false" sensitive="false">
+    <field-label mime-type="text-plain"><![CDATA[Privacy consent]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Согласие на обработку данных]]></field-label>
+    <field-description><![CDATA[Consent status]]></field-description>
+  </field-definition>
+  <field-definition id="profileStatus" type="picklist" required="true" custom="true" anonymize="false" sensitive="false">
+    <field-label mime-type="text-plain"><![CDATA[Profile status]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Статус профиля]]></field-label>
+    <field-description><![CDATA[Profile review status]]></field-description>
+    <picklist-id>profileStatusDemo</picklist-id>
+  </field-definition>
+  <field-definition id="profileCreatedDate" type="date" required="true" custom="true" anonymize="false" sensitive="false">
+    <field-label mime-type="text-plain"><![CDATA[Profile created date]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Дата создания профиля]]></field-label>
+    <field-description><![CDATA[Initial profile creation date]]></field-description>
+  </field-definition>
+  <field-definition id="profileUpdatedDate" type="date" required="false" custom="true" anonymize="false" sensitive="false">
+    <field-label mime-type="text-plain"><![CDATA[Profile updated date]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Дата обновления профиля]]></field-label>
+    <field-description><![CDATA[Last profile update date]]></field-description>
+  </field-definition>
+  <field-definition id="resume" type="richText" required="false" custom="false" anonymize="true" sensitive="true">
+    <field-label mime-type="text-plain"><![CDATA[Resume]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Резюме]]></field-label>
+    <field-description><![CDATA[Candidate resume content]]></field-description>
+  </field-definition>
+  <field-definition id="additionalDocuments" type="multiattachmentselection" required="false" custom="true" anonymize="true" sensitive="true">
+    <field-label mime-type="text-plain"><![CDATA[Additional documents]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Дополнительные документы]]></field-label>
+    <field-description><![CDATA[Supporting candidate documents]]></field-description>
+  </field-definition>
+  <field-definition id="recruiterComment" type="textarea" required="false" custom="true" anonymize="true" sensitive="true">
+    <field-label mime-type="text-plain"><![CDATA[Recruiter comment]]></field-label>
+    <field-label mime-type="text-plain" lang="ru_RU"><![CDATA[Комментарий рекрутера]]></field-label>
+    <field-description><![CDATA[Internal recruiter note]]></field-description>
+  </field-definition>
+  <background-element id="workExperienceDemo" type-id="4" sensitive="true">
+    <label>Work experience</label>
+    <label xml:lang="ru_RU">Опыт работы</label>
+    <data-field id="employer" field-name="vfld1" max-length="200" anonymize="true">
+      <label>Employer</label>
+      <label xml:lang="ru_RU">Работодатель</label>
+    </data-field>
+    <data-field id="position" field-name="vfld2" max-length="200" anonymize="true">
+      <label>Position</label>
+      <label xml:lang="ru_RU">Должность</label>
+    </data-field>
+    <data-field id="startDate" field-name="dfld1" max-length="20" anonymize="true">
+      <label>Start date</label>
+      <label xml:lang="ru_RU">Дата начала</label>
+    </data-field>
+    <data-field id="endDate" field-name="dfld2" max-length="20" anonymize="true">
+      <label>End date</label>
+      <label xml:lang="ru_RU">Дата окончания</label>
+    </data-field>
+    <data-field id="responsibilities" field-name="vfld3" max-length="2000" anonymize="true">
+      <label>Responsibilities</label>
+      <label xml:lang="ru_RU">Обязанности</label>
+    </data-field>
+  </background-element>
+  <background-element id="educationDemo" type-id="6" sensitive="true">
+    <label>Education</label>
+    <label xml:lang="ru_RU">Образование</label>
+    <data-field id="institution" field-name="vfld1" max-length="250" anonymize="true">
+      <label>Institution</label>
+      <label xml:lang="ru_RU">Учебное заведение</label>
+    </data-field>
+    <data-field id="specialization" field-name="vfld2" max-length="250" anonymize="true">
+      <label>Specialization</label>
+      <label xml:lang="ru_RU">Специальность</label>
+    </data-field>
+    <data-field id="graduationYear" field-name="vfld3" max-length="4" anonymize="true">
+      <label>Graduation year</label>
+      <label xml:lang="ru_RU">Год окончания</label>
+    </data-field>
+  </background-element>
+  <background-element id="languagesDemo" type-id="228" sensitive="true">
+    <label>Languages</label>
+    <label xml:lang="ru_RU">Иностранные языки</label>
+    <data-field id="language" field-name="vfld1" max-length="100" anonymize="true">
+      <label>Language</label>
+      <label xml:lang="ru_RU">Язык</label>
+    </data-field>
+    <data-field id="proficiency" field-name="vfld2" max-length="100" anonymize="true">
+      <label>Proficiency level</label>
+      <label xml:lang="ru_RU">Уровень владения</label>
+    </data-field>
+  </background-element>
+  <field-permission type="write">
+    <role-name>Candidate</role-name>
+    <field refid="firstName"/>
+    <field refid="middleName"/>
+    <field refid="lastName"/>
+    <field refid="contactEmail"/>
+    <field refid="cellPhone"/>
+    <field refid="country"/>
+    <field refid="city"/>
+    <field refid="currentCompany"/>
+    <field refid="currentTitle"/>
+    <field refid="desiredLocation"/>
+    <field refid="workSchedule"/>
+    <field refid="employmentType"/>
+    <field refid="salaryExpectation"/>
+    <field refid="privacyConsent"/>
+    <field refid="resume"/>
+    <field refid="additionalDocuments"/>
+  </field-permission>
+  <field-permission type="read">
+    <role-name>Candidate</role-name>
+    <field refid="profileStatus"/>
+    <field refid="profileCreatedDate"/>
+    <field refid="profileUpdatedDate"/>
+  </field-permission>
+  <field-permission type="write">
+    <role-name>Recruiter</role-name>
+    <field refid="firstName"/>
+    <field refid="middleName"/>
+    <field refid="lastName"/>
+    <field refid="contactEmail"/>
+    <field refid="cellPhone"/>
+    <field refid="country"/>
+    <field refid="city"/>
+    <field refid="currentCompany"/>
+    <field refid="currentTitle"/>
+    <field refid="desiredLocation"/>
+    <field refid="workSchedule"/>
+    <field refid="employmentType"/>
+    <field refid="salaryExpectation"/>
+    <field refid="candidateSource"/>
+    <field refid="talentPool"/>
+    <field refid="privacyConsent"/>
+    <field refid="profileStatus"/>
+    <field refid="profileCreatedDate"/>
+    <field refid="profileUpdatedDate"/>
+    <field refid="resume"/>
+    <field refid="additionalDocuments"/>
+    <field refid="recruiterComment"/>
+  </field-permission>
+  <field-permission type="none">
+    <role-name>Candidate</role-name>
+    <field refid="recruiterComment"/>
+  </field-permission>
+  <search-display-options-config>
+    <category id="candidateContactDemo" name="candidateContactDemo">
+      <label>Candidate contact data</label>
+      <label xml:lang="ru_RU">Контактные данные кандидата</label>
+      <column field-ref="currentTitle" bge-ref="none" select-by-default="true" gridOrder="1"><label/></column>
+      <column field-ref="country" bge-ref="none" select-by-default="true" gridOrder="2"><label/></column>
+      <column field-ref="city" bge-ref="none" select-by-default="true" gridOrder="3"><label/></column>
+      <column field-ref="profileStatus" bge-ref="none" select-by-default="true" gridOrder="4"><label/></column>
+    </category>
+  </search-display-options-config>
+  <candidate-summary-display-options-config>
+    <category id="candidateSummaryDemo" name="candidateSummaryDemo">
+      <label>Candidate summary</label>
+      <label xml:lang="ru_RU">Краткая информация</label>
+      <column field-ref="currentTitle" bge-ref="none" select-by-default="true" gridOrder="1"><label/></column>
+      <column field-ref="city" bge-ref="none" select-by-default="true" gridOrder="2"><label/></column>
+      <column field-ref="profileStatus" bge-ref="none" select-by-default="true" gridOrder="3"><label/></column>
+    </category>
+  </candidate-summary-display-options-config>
+</candidate-profile-data-model>

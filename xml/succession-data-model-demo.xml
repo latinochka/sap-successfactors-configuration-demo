@@ -1,0 +1,181 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<succession-data-model>
+  <!--Portfolio demo. Tenant-specific fields and organization references were removed.-->
+  <description>Neutral employee data model example for portfolio review.</description>
+  <standard-element id="userId" max-length="100" required="false" matrix-filter="false">
+    <label>User ID</label>
+    <label xml:lang="ru-RU">Идентификатор пользователя</label>
+    <label xml:lang="en-US">User ID</label>
+  </standard-element>
+  <standard-element id="firstName" max-length="128" required="true" matrix-filter="false">
+    <label>First name</label>
+    <label xml:lang="ru-RU">Имя</label>
+    <label xml:lang="en-US">First name</label>
+  </standard-element>
+  <standard-element id="lastName" max-length="128" required="true" matrix-filter="false">
+    <label>Last name</label>
+    <label xml:lang="ru-RU">Фамилия</label>
+    <label xml:lang="en-US">Last name</label>
+  </standard-element>
+  <standard-element id="email" max-length="100" required="true" matrix-filter="false">
+    <label>Email</label>
+    <label xml:lang="ru-RU">Электронная почта</label>
+    <label xml:lang="en-US">Email</label>
+  </standard-element>
+  <standard-element id="title" max-length="255" required="false" matrix-filter="true">
+    <label>Position</label>
+    <label xml:lang="ru-RU">Должность</label>
+    <label xml:lang="en-US">Position</label>
+  </standard-element>
+  <standard-element id="jobCode" max-length="128" required="false" matrix-filter="true">
+    <label>Job code</label>
+    <label xml:lang="ru-RU">Код должности</label>
+    <label xml:lang="en-US">Job code</label>
+  </standard-element>
+  <standard-element id="department" max-length="128" required="false" matrix-filter="true">
+    <label>Department</label>
+    <label xml:lang="ru-RU">Подразделение</label>
+    <label xml:lang="en-US">Department</label>
+  </standard-element>
+  <standard-element id="division" max-length="128" required="false" matrix-filter="true">
+    <label>Legal entity</label>
+    <label xml:lang="ru-RU">Юридическое лицо</label>
+    <label xml:lang="en-US">Legal entity</label>
+  </standard-element>
+  <standard-element id="location" max-length="128" required="false" matrix-filter="true">
+    <label>Location</label>
+    <label xml:lang="ru-RU">Локация</label>
+    <label xml:lang="en-US">Location</label>
+  </standard-element>
+  <standard-element id="managerId" max-length="100" required="false" matrix-filter="false">
+    <label>Manager</label>
+    <label xml:lang="ru-RU">Руководитель</label>
+    <label xml:lang="en-US">Manager</label>
+  </standard-element>
+  <standard-element id="hrId" max-length="100" required="false" matrix-filter="false">
+    <label>HR partner</label>
+    <label xml:lang="ru-RU">HR-партнёр</label>
+    <label xml:lang="en-US">HR partner</label>
+  </standard-element>
+  <standard-element id="hireDate" max-length="20" required="false" matrix-filter="false">
+    <label>Hire date</label>
+    <label xml:lang="ru-RU">Дата приёма</label>
+    <label xml:lang="en-US">Hire date</label>
+  </standard-element>
+  <standard-element id="dateOfCurrentPosition" max-length="20" required="false" matrix-filter="false">
+    <label>Current position start date</label>
+    <label xml:lang="ru-RU">Дата вступления в текущую должность</label>
+    <label xml:lang="en-US">Current position start date</label>
+  </standard-element>
+  <standard-element id="jobLevel" max-length="100" required="false" matrix-filter="true">
+    <label>Job level</label>
+    <label xml:lang="ru-RU">Уровень должности</label>
+    <label xml:lang="en-US">Job level</label>
+  </standard-element>
+  <standard-element id="jobFamily" max-length="100" required="false" matrix-filter="true">
+    <label>Job family</label>
+    <label xml:lang="ru-RU">Семейство должностей</label>
+    <label xml:lang="en-US">Job family</label>
+  </standard-element>
+  <standard-element id="talentPool" max-length="100" required="false" matrix-filter="true">
+    <label>Talent pool</label>
+    <label xml:lang="ru-RU">Пул талантов</label>
+    <label xml:lang="en-US">Talent pool</label>
+  </standard-element>
+  <standard-element id="performance" max-length="100" required="false" matrix-filter="false">
+    <label>Performance</label>
+    <label xml:lang="ru-RU">Результативность</label>
+    <label xml:lang="en-US">Performance</label>
+  </standard-element>
+  <standard-element id="potential" max-length="100" required="false" matrix-filter="false">
+    <label>Potential</label>
+    <label xml:lang="ru-RU">Потенциал</label>
+    <label xml:lang="en-US">Potential</label>
+  </standard-element>
+  <standard-element id="keyPosition" max-length="20" required="false" matrix-filter="false">
+    <label>Key position</label>
+    <label xml:lang="ru-RU">Ключевая должность</label>
+    <label xml:lang="en-US">Key position</label>
+  </standard-element>
+  <standard-element id="defaultLocale" max-length="32" required="false" matrix-filter="false">
+    <label>Default locale</label>
+    <label xml:lang="ru-RU">Язык по умолчанию</label>
+    <label xml:lang="en-US">Default locale</label>
+  </standard-element>
+  <standard-element id="timeZone" max-length="50" required="false" matrix-filter="false">
+    <label>Time zone</label>
+    <label xml:lang="ru-RU">Часовой пояс</label>
+    <label xml:lang="en-US">Time zone</label>
+  </standard-element>
+  <standard-element id="custom01" max-length="256" required="false" matrix-filter="true">
+    <label>Employee category</label>
+    <label xml:lang="ru-RU">Категория персонала</label>
+    <label xml:lang="en-US">Employee category</label>
+    <picklist id="employeeCategoryDemo"/>
+  </standard-element>
+  <standard-element id="custom02" max-length="256" required="false" matrix-filter="true">
+    <label>Functional area</label>
+    <label xml:lang="ru-RU">Функциональное направление</label>
+    <label xml:lang="en-US">Functional area</label>
+    <picklist id="functionalAreaDemo"/>
+  </standard-element>
+  <standard-element id="custom03" max-length="256" required="false" matrix-filter="true">
+    <label>Employment type</label>
+    <label xml:lang="ru-RU">Тип занятости</label>
+    <label xml:lang="en-US">Employment type</label>
+    <picklist id="employmentTypeDemo"/>
+  </standard-element>
+  <standard-element id="custom04" max-length="256" required="false" matrix-filter="true">
+    <label>Work schedule</label>
+    <label xml:lang="ru-RU">График работы</label>
+    <label xml:lang="en-US">Work schedule</label>
+    <picklist id="workScheduleDemo"/>
+  </standard-element>
+  <userinfo-element id="reloWilling" type="varchar" required="false">
+    <label>Willing to relocate</label>
+    <label xml:lang="ru-RU">Готовность к переезду</label>
+    <picklist id="yesNoDemo"/>
+  </userinfo-element>
+  <userinfo-element id="reloLocation" type="varchar" required="false">
+    <label>Preferred relocation location</label>
+    <label xml:lang="ru-RU">Предпочтительное место переезда</label>
+  </userinfo-element>
+  <userinfo-element id="reloComments" type="varchar" required="false">
+    <label>Relocation comments</label>
+    <label xml:lang="ru-RU">Комментарий по переезду</label>
+  </userinfo-element>
+  <background-element id="insideWorkExperienceDemo" type-id="2">
+    <label>Internal work experience</label>
+    <label xml:lang="ru-RU">Опыт работы внутри компании</label>
+    <data-field id="company" field-name="vfld1" max-length="200"><label>Company</label><label xml:lang="ru-RU">Компания</label></data-field>
+    <data-field id="position" field-name="vfld2" max-length="200"><label>Position</label><label xml:lang="ru-RU">Должность</label></data-field>
+    <data-field id="startDate" field-name="dfld1" max-length="20"><label>Start date</label><label xml:lang="ru-RU">Дата начала</label></data-field>
+    <data-field id="endDate" field-name="dfld2" max-length="20"><label>End date</label><label xml:lang="ru-RU">Дата окончания</label></data-field>
+  </background-element>
+  <background-element id="educationDemo" type-id="6">
+    <label>Education</label>
+    <label xml:lang="ru-RU">Образование</label>
+    <data-field id="institution" field-name="vfld1" max-length="250"><label>Institution</label><label xml:lang="ru-RU">Учебное заведение</label></data-field>
+    <data-field id="degree" field-name="vfld2" max-length="200"><label>Degree</label><label xml:lang="ru-RU">Квалификация</label></data-field>
+    <data-field id="graduationYear" field-name="vfld3" max-length="4"><label>Graduation year</label><label xml:lang="ru-RU">Год окончания</label></data-field>
+  </background-element>
+  <background-element id="certificatesDemo" type-id="110">
+    <label>Certificates</label>
+    <label xml:lang="ru-RU">Сертификаты</label>
+    <data-field id="certificateName" field-name="vfld1" max-length="250"><label>Certificate name</label><label xml:lang="ru-RU">Название сертификата</label></data-field>
+    <data-field id="provider" field-name="vfld2" max-length="200"><label>Provider</label><label xml:lang="ru-RU">Организация</label></data-field>
+    <data-field id="completionDate" field-name="dfld1" max-length="20"><label>Completion date</label><label xml:lang="ru-RU">Дата получения</label></data-field>
+  </background-element>
+  <element-permission type="read">
+    <role-name>Employee</role-name>
+    <standard-element-ref refid="userId"/><standard-element-ref refid="firstName"/><standard-element-ref refid="lastName"/><standard-element-ref refid="email"/><standard-element-ref refid="title"/><standard-element-ref refid="department"/><standard-element-ref refid="location"/><standard-element-ref refid="managerId"/>
+  </element-permission>
+  <element-permission type="write">
+    <role-name>Employee</role-name>
+    <standard-element-ref refid="defaultLocale"/><standard-element-ref refid="timeZone"/>
+  </element-permission>
+  <element-permission type="read">
+    <role-name>HR</role-name>
+    <standard-element-ref refid="userId"/><standard-element-ref refid="firstName"/><standard-element-ref refid="lastName"/><standard-element-ref refid="email"/><standard-element-ref refid="title"/><standard-element-ref refid="jobCode"/><standard-element-ref refid="department"/><standard-element-ref refid="division"/><standard-element-ref refid="location"/><standard-element-ref refid="managerId"/><standard-element-ref refid="hrId"/><standard-element-ref refid="hireDate"/><standard-element-ref refid="jobLevel"/><standard-element-ref refid="jobFamily"/><standard-element-ref refid="talentPool"/><standard-element-ref refid="performance"/><standard-element-ref refid="potential"/><standard-element-ref refid="custom01"/><standard-element-ref refid="custom02"/><standard-element-ref refid="custom03"/><standard-element-ref refid="custom04"/>
+  </element-permission>
+</succession-data-model>
